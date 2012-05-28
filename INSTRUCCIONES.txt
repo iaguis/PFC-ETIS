@@ -1,0 +1,5 @@
+Compilación:
+
+nvcc -c kernels.cu
+
+g++ -o rtime kernels.o main_pruebas.cpp -lboost_thread-mt -lcudart -Wall
